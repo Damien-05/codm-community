@@ -1,0 +1,15 @@
+provider: nixpacks
+nixpacks:
+  plan:
+    phases:
+      setup:
+        nixPkgs:
+          - nodejs_20
+      install:
+        cmds:
+          - cd backend && npm install
+      build:
+        cmds:
+          - echo "Build complete"
+    start:
+      cmd: cd backend && npm start
