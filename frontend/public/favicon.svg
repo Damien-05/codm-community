@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#0A0E27"/>
+  <circle cx="32" cy="32" r="28" fill="#1A1F3A"/>
+  
+  <!-- Trophy body gradient -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00CC6F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Trophy cup -->
+  <path d="M 20 18 L 20 28 C 20 32 22 35 25 36 L 25 40 L 22 40 L 22 45 L 42 45 L 42 40 L 39 40 L 39 36 C 42 35 44 32 44 28 L 44 18 Z" 
+        fill="url(#goldGrad)" stroke="#FFA500" stroke-width="1"/>
+  
+  <!-- Trophy handles -->
+  <path d="M 18 20 C 15 20 13 22 13 25 C 13 28 15 30 18 30" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 46 20 C 49 20 51 22 51 25 C 51 28 49 30 46 30" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Trophy base -->
+  <rect x="22" y="40" width="20" height="5" fill="url(#goldGrad)" rx="1"/>
+  
+  <!-- CODM text -->
+  <text x="32" y="27" font-family="Arial, sans-serif" font-size="8" font-weight="bold" 
+        fill="#0A0E27" text-anchor="middle">CODM</text>
+  
+  <!-- Accent glow -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="url(#accentGrad)" stroke-width="2" opacity="0.5"/>
+</svg>
